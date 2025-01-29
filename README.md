@@ -6,12 +6,27 @@ You can search and filter events by their themes or dates, and a
 notification bell will remind you when an event is coming up.
 
 ### Features
--Display event cards with name, date, and duration.
--View event details on a separate page by clicking on a card.
--User login system for personalized access.
--book an event 
--Add new events using a simple form.
--Edit or update existing events.
--Delete events when no longer needed.
--Search events 
--Notification bell for reminders about upcoming events.
+        -Display event cards with name, date, and duration.
+
+        -View event details on a separate page by clicking on a card.
+
+        -User login system for personalized access.
+
+        -book an event 
+
+        -Add new events using a simple form.
+
+        -Edit or update existing events.
+
+        -Delete events when no longer needed.
+
+        -Search events 
+
+        -Notification bell for reminders about upcoming events.
+
+## Final Products First Look so Far
+![alt text](Assets/HomePage.png)
+![alt text](<Assets/login Page.png>)![alt text](<Assets/SignUp page.png>)
+![alt text](<Assets/All Event Page.png>)
+![alt text](<Assets/Create Event Page.png>)
+![alt text](<Assets/Booked Event Page.png>)

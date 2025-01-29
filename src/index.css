@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Amatic+SC:wght@400;700&family=Bungee+Spice&family=Carter+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Iceberg&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Mina:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla:EDPT,EHLT@99,4&family=Nosifer&family=Orbitron:wght@400..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Racing+Sans+One&family=Rationale&family=Zen+Dots&display=swap');
+body {
+    background-color: rgb(2, 53, 36);
+    font-family: "Orbitron" serif;
+    padding: 50px;
+    margin: 20px;
+}
+h1{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 70px;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+/*====================Header Section====================*/
+.header{
+    background-color: rgb(65, 3, 28);
+    margin-bottom: 5px;
+    padding: 20px;
+    border-radius: 15px;
+    max-height: 300px;
+}
+nav ul{
+    margin-top: 2px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 30px;
+}
+nav li {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav li:hover {
+    background-color: #45a049;  
+    border-radius: 10px;  
+    padding: 0.5rem;
+  }
+  
+  nav li svg {
+    margin-right: 8px;  
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+/*====================Footer Styles====================*/
+  .footer{
+    background-color: rgb(66, 39, 50);
+    margin-bottom: 0;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+footer li {
+    color: white;             
+    display: flex;            
+    align-items: center;      
+    justify-content: center;  
+  }
+footer li:hover {
+    background-color: #07d7f3;  
+    border-radius: 10px;  
+    padding: 0.5rem;
+  }
+  footer li svg {
+    font-size: 24px;          
+  }
+/*==================== Home Section=====================*/
+.home{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    gap: 20px;
+ 
+}
+.left-section{
+    /* flex: 1; */
+    padding: 30px;
+    background-color: rgb(29, 59, 104);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+.right-section{
+    flex: 0.2;
+    padding: 20px;
+    background-color: rgb(230, 231, 231);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.info, .mission-vision {
+    margin-bottom: 1.5rem;
+  }
+h3 {
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+    font-size: 70px;
+}
+p{
+    font-size: 30px;
+}
+  
+button {
+    padding: 10px 20px;
+    margin: 100px 20px;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    font-size: 50px;
+}
+  
+button:hover {
+    background-color: #45a049;
+    color: white;
+}
+  
+.sign-in, .sign-up {
+    background-color: darkred;
+    width: 500px;
+    gap: 20px;
+}
+  
+.browse-events {
+    background-color: #0a2bc2;
+    color: white;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+/*==================== Log in Section=====================*/
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-color: #054a53;
+    border-radius: 20px;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h4{
+    font-family: "Nabla" serif;
+    font-size: 40px;
+    text-align: center;
+}
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.login label{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.login input {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #f00505;
+}
+
+.login button {
+    padding: 10px 5px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #5f4703;
+    color: white;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #043681;
+}
+
+/*==================== Register Section=====================*/
+.register {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #03435f;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: auto;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.register input, .register select {
+    width: 80%;
+    padding: 20px;
+    margin: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid #df0707;
+    font-size: 20px;
+    outline: none;
+    text-align: left;
+}
+.register label {
+    display: block;
+    width: 80%;
+    text-align: left;
+    margin-top: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    gap: 5px;
+    color: rgb(8, 171, 51);
+}
+.register div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register .event-preference {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 5px; 
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 10px;
+}
+.register .event-preference label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 5px;
+}
+
+.register .event-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    gap: 10px; 
+    align-items: flex-start;
+    margin-top: 15px;
+}
+.register .event-type label {
+    font-size: 16px;
+    display: flex;
+    align-items: center; /* Aligns radio button with text */
+    gap: 8px; /* Adds space between radio button and label text */
+}
+.register button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 35px;
+    border: none;
+    background-color: #4f02ba;
+    color: rgb(3, 123, 127);
+    cursor: pointer;
+}
+
+.register button:hover {
+    background-color: #45a049;
+}
+/*==================== Search and filter bar=====================*/
+.top-bar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.search-bar select {
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.search-bar input {
+    width: 80%;
+    padding: 20px;
+    margin: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid #df0707;
+    font-size: 20px;
+    outline: none;
+    text-align: left;
+}
+.filter-bar select {
+    align-items: right;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    gap: 10px;
+}
+/*==================== Events Page section=====================*/
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.events-page {
+    padding: 20px;
+}
+
+/*==================== Events Card Section =====================*/
+.event-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    border: 1px solid #051dfc;
+    border-radius: 11px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 10px;
+    max-height: 350px;
+}
+
+.event-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.event-details h3 {
+    margin: 0;
+    color: #1c9926;
+    font-size: 1.2rem;
+}
+
+.event-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #c507ac;
+}
+
+.event-details a {
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event-details a:hover {
+    text-decoration: underline;
+}
+.book-button {
+    padding: 10px 15px;
+    background-color: #057386;
+    color: rgb(10, 1, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.book-button:hover {
+    background-color: #9e0a97;
+}
+.remove-button {
+    padding: 10px 15px;
+    background-color: #d1ac09;
+    color: rgb(7, 1, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.remove-button:hover {
+    background-color: #f80000;
+}
+
+/*==================== Event Form Section=====================*/
+.create-event {
+    max-width: 900px;
+    min-height: 50px;
+    margin: auto;
+    padding: 40px;
+    background-color: #03435f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.create-event h2 {
+    text-align: center;
+    color: white;
+}
+
+.create-event form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-event input,
+.create-event textarea {
+    width: 80%;
+    height: max-content;
+    padding: 10px;
+    margin: 25px 15px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.create-event button {
+    padding: 30px;
+    margin: 20px;
+    width: 50%;
+    background-color: #ff6600;
+    color: rgb(20, 1, 1);
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.create-event button:hover {
+    background-color: #cc5500;
+}
+
+/*==================== =====================*/
+
+/*==================== =====================*/
+
+/*==================== =====================*/
+
+/*==================== =====================*/
+
+/*==================== =====================*/
+
+/*==================== =====================*/
+
+/*==================== =====================*/
+
+/*==================== =====================*/
+
+/*==================== =====================*/

@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Amatic+SC:wght@400;700&family=Bungee+Spice&family=Carter+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Iceberg&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Mina:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla:EDPT,EHLT@99,4&family=Nosifer&family=Orbitron:wght@400..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Racing+Sans+One&family=Rationale&family=Zen+Dots&display=swap');
+body {
+    background-color: rgb(172, 9, 9);
+    font-family: "Orbitron" serif;
+    padding: 50px;
+    margin: 40px;
+}
