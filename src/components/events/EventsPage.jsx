@@ -3,7 +3,7 @@ import FilterBar from "../shared/FilterBar";
 import SearchBar from "../shared/SearchBar";
 import EventCard from "./EventCard";
 
-//event ppage component
+//event page component
 function EventsPage() {
     const [events, setEvents] = useState([]);
     const [filteredEvents, setFilteredEvents] = useState([]);
