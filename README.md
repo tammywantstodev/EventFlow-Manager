@@ -25,8 +25,9 @@ notification bell will remind you when an event is coming up.
         -Notification bell for reminders about upcoming events.
 
 ## Final Products First Look so Far
-![alt text](Assets/HomePage.png)
+![alt text](Assets/HomePage1.png)![alt text](Assets/HomePage2.png)
+![alt text](Assets/AboutSection.png)
 ![alt text](<Assets/login Page.png>)![alt text](<Assets/SignUp page.png>)
 ![alt text](<Assets/All Event Page.png>)
 ![alt text](<Assets/Create Event Page.png>)
-![alt text](<Assets/Booked Event Page.png>)
+![alt text](Assets/Booked+notification.png)

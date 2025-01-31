@@ -13,8 +13,8 @@ function Header(){
                     <li alt='Home'><Link to="/">
                         <FaHome size={60}/></Link>
                     </li>
-                    <li alt='About Use'>    
-                        <BsFillPeopleFill size={60}/>
+                    <li alt='About Use'><Link to="/about">    
+                        <BsFillPeopleFill size={60}/></Link>
                     </li>
                     <li><Link to='/events'>    
                         Events</Link>
