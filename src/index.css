@@ -91,7 +91,7 @@ footer li:hover {
  
 }
 .left-section{
-    /* flex: 1; */
+    flex: 1.5;
     padding: 30px;
     background-color: rgb(29, 59, 104);
     border-radius: 20px;
@@ -99,7 +99,7 @@ footer li:hover {
     max-width: 900px;
 }
 .right-section{
-    flex: 0.2;
+    flex: 1;
     padding: 20px;
     background-color: rgb(230, 231, 231);
     border-radius: 20px;
@@ -273,8 +273,8 @@ h4{
 .register .event-type label {
     font-size: 16px;
     display: flex;
-    align-items: center; /* Aligns radio button with text */
-    gap: 8px; /* Adds space between radio button and label text */
+    align-items: center; 
+    gap: 8px; 
 }
 .register button {
     padding: 10px 20px;
@@ -344,7 +344,7 @@ h4{
     overflow: hidden;
     width: 300px;
     margin: 10px;
-    max-height: 350px;
+    max-height: 400px;
 }
 
 .event-details {
@@ -453,7 +453,30 @@ h4{
     background-color: #cc5500;
 }
 
-/*==================== =====================*/
+/*==================== Notification  =====================*/
+.notification-bell {
+    display: inline-block;
+    align-items: right;
+    gap: 10px;
+}
+
+.notification-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.notifications {
+    background: #f80101;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.notification-item {
+    display: inline-block;
+    align-items: right;
+    gap: 10px;
+}
 
 /*==================== =====================*/
 

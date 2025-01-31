@@ -1,5 +1,5 @@
 import React from "react";
-
+import NotificationBell from "../notification/NotificationBell";
 //each event handled by this event card component
 const EventCard = ({ event, isBooked, onBook, onRemove }) => {
     return (
@@ -26,9 +26,8 @@ const EventCard = ({ event, isBooked, onBook, onRemove }) => {
                 <p>
                     <strong>Participants:</strong> {event.participants} / {event.max_participants}
                 </p>
-                {/* <button onClick={() => onBook(event)} className="book-button">
-                    Book Event
-                </button> */}
+                {isBooked && <NotificationBell daysRemaining={event.daysRemaining} />}
+
                 {isBooked ? (
                     <button onClick={() => onRemove(event)} className="remove-button">
                         Delete Event
