@@ -23,7 +23,7 @@ function Login(){
             if (user) {
                 if (user.password === password) {
                     alert("Log In Successful");
-                    navigate('/home');
+                    navigate('/events');
                 } else {
                     alert("Wrong Password");
                 }
