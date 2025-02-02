@@ -1,11 +1,38 @@
 import { useState } from 'react';
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 
 
 //Register component
 function Register() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+
+    
     const [selectedEvents, setSelectedEvents] = useState([]);
     const [eventType, setEventType] = useState('both');  // Default to "both"
 
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        let userData = {name, email, password, confirmPassword, selectedEvents, eventType};
+        
+        fetch("http://localhost:8000/users",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify(userData),
+        }).then(()=>{
+            if(password === confirmPassword){
+                alert("Registered Successfully.")
+                navigate('/home');
+            } else{
+                alert("Confirmation Password does not match First Password. Try again.")
+            }
+        });
+    }
     const handleEventChange = (event) => {
         const { value, checked } = event.target;
         if (checked) {
@@ -22,22 +49,22 @@ function Register() {
     return (
         <div className="register">
             <h2>Create an Account</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required />
+                    <input value={name} onChange={e => setName(e.target.value)} type="text" id="name" name="name" required />
                 </div>
                 <div>
                     <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
+                    <input value={email} onChange={e => setEmail(e.target.value)} type="email" id="email" name="email" required />
                 </div>
                 <div>
                     <label htmlFor="password">Password:</label>
-                    <input type="password" id="password" name="password" required />
+                    <input value={password} onChange={e => setPassword(e.target.value)} type="password" id="password" name="password" required />
                 </div>
                 <div>
                     <label htmlFor="confirm-password">Confirm Password:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required />
+                    <input value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} type="password" id="confirm-password" name="confirm-password" required />
                 </div>
                 <div>
                     <label>Event Preferences:</label>
@@ -91,7 +118,9 @@ function Register() {
                         </label>
                     </div>
                 </div>
-                <button type="submit">Register</button>
+                <div>
+                    <button type="submit">Register</button>
+                </div>
             </form>
         </div>
     );
