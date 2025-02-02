@@ -10,11 +10,11 @@ function Header(){
             <h1> Event Flow Manager</h1>
             <nav>
                 <ul>
-                    <li alt='Home'><Link to="/">
-                        <FaHome size={60}/></Link>
+                    <li><Link to="/">
+                        <FaHome size={80}/></Link>
                     </li>
-                    <li alt='About Use'><Link to="/about">    
-                        <BsFillPeopleFill size={60}/></Link>
+                    <li ><Link to="/about">    
+                        <BsFillPeopleFill size={80}/></Link>
                     </li>
                     <li><Link to='/events'>    
                         Events</Link>

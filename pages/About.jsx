@@ -1,5 +1,6 @@
 import React from 'react';
 
+//what says about us than this about section component
 function About(){
     return(
         <div className='about'>

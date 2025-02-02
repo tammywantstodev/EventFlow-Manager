@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 
+//Over achiever in group 5 ended us adding the image sliders just to test the waters
 function ImageSlider(){
     const images = [
         "Assets/homeimages/1.png",

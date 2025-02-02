@@ -1,9 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Amatic+SC:wght@400;700&family=Bungee+Spice&family=Carter+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Iceberg&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Mina:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla:EDPT,EHLT@99,4&family=Nosifer&family=Orbitron:wght@400..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Racing+Sans+One&family=Rationale&family=Zen+Dots&display=swap');
+/* We wamted to have an animated changing background 
+So we utilised css animation */
 body {
-    background-color: rgb(2, 53, 36);
+    background-image: url("Assets/background/background (1).jpg");
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 20s infinite;
     font-family: "Orbitron" serif;
-    padding: 50px;
-    margin: 20px;
+    padding: 60px;
+    margin: 60px;
+}
+@keyframes changeBackground {
+    0% {
+      background-image: url("Assets/background/background (1).jpg");
+    }
+    25% {
+      background-image: url("Assets/background/background (3).jpg");
+    }
+    50% {
+      background-image: url("Assets/background/background (4).jpg");
+    }
+    75% {
+      background-image: url("Assets/background/background (5).jpg");
+    }
+    100% {
+      background-image: url("Assets/background/background (6).jpg");
+    }
 }
 h1{
     text-align: left;
@@ -17,9 +39,9 @@ h2{
 }
 /*====================Header Section====================*/
 .header{
-    background-color: rgb(65, 3, 28);
+    background-color: rgb(3, 66, 46);
     margin-bottom: 5px;
-    padding: 20px;
+    padding: 5px;
     border-radius: 15px;
     max-height: 300px;
 }
@@ -28,11 +50,11 @@ nav ul{
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 40px;
     padding: 30px;
 }
 nav li {
-    font-size: 20px;
+    font-size: 40px;
     color: white;
     display: flex;
     align-items: center;
@@ -65,17 +87,17 @@ nav li {
 
 footer ul{
     display: flex;
-    gap: 40px;
+    gap: 60px;
     list-style-type: none;
 }
 footer li {
-    color: white;             
+    color: rgb(0, 33, 220);             
     display: flex;            
     align-items: center;      
     justify-content: center;  
   }
 footer li:hover {
-    background-color: #07d7f3;  
+    background-color: #beeee9;  
     border-radius: 10px;  
     padding: 0.5rem;
   }
@@ -87,33 +109,38 @@ footer li svg {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0;
+    padding: 10px;
     gap: 20px;
  
 }
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px; 
+}
 .left-section{
-    flex:1;
+    flex:9;
+    margin: 20px;
     padding: 30px;
     background-color: rgb(29, 59, 104);
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
+    width: 100%;
 }
 .right-section{
     flex: 1;
-    padding: 20px;
+    margin: 20px;
+    padding: 30px;
     background-color: rgb(1, 38, 38);
-    border-radius: 20px;
+    border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    height: 950px;
 }
-.info, .mission-vision {
-    margin-bottom: 1.5rem;
-  }
 
 .home h2 {
     color: #0d06d8;
@@ -127,7 +154,7 @@ footer li svg {
   
 button {
     padding: 10px 20px;
-    margin: 100px 20px;
+    margin: 90px 20px;
     border: none;
     border-radius: 45px;
     cursor: pointer;
@@ -153,7 +180,8 @@ button:hover {
 }
 /*==================== About Section=====================*/
 .about{
-    background-color: #810735;
+    background-image: url("Assets/background/background (2).jpg");
+    /* background-color: #810735; */
     font-family: "Agbalumo" , serif;
     margin: 20px;
     padding: 50px;
@@ -162,6 +190,11 @@ button:hover {
     font-size: 80px;
     color: magenta;
 }
+.mission-vision {
+    padding: 30px;
+    margin-bottom: 1.5rem;
+}
+
 .about h3{
     font-size: 50px;
     color: rgb(2, 16, 53);
@@ -174,16 +207,15 @@ button:hover {
 .login{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     padding: 100px;
-    background-color: #054a53;
+    background-color: #137784;
     border-radius: 20px;
     max-width: 300px;
     margin: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-h4{
+.login h4{
     font-family: "Nabla" serif;
     font-size: 40px;
     text-align: center;
@@ -191,7 +223,10 @@ h4{
 .login form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 450px;
+    padding: 10px;
+    max-width: 300px;
+    margin: 20px;
 }
 .login label{
     font-size: 20px;
@@ -204,6 +239,7 @@ h4{
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #f00505;
+    width: 300px;
 }
 
 .login button {
@@ -231,14 +267,12 @@ h4{
     max-width: 1000px;
     margin: auto;
 }
-
 .register form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-
 .register input, .register select {
     width: 80%;
     padding: 20px;
@@ -249,12 +283,12 @@ h4{
     outline: none;
     text-align: left;
 }
-.register label {
-    display: block;
+.user-register label {
+    display: inline-flex;
     width: 80%;
     text-align: left;
     margin-top: 8px;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
     gap: 5px;
     color: rgb(8, 171, 51);
@@ -265,50 +299,41 @@ h4{
     flex-direction: column;
     align-items: center;
 }
-.register .event-preference {
+.choices div{
     display: flex;
-    flex-direction: column;
-    width: 80%;
-    gap: 5px; 
+    flex-wrap: wrap;
     align-items: flex-start;
-    text-align: left;
-    margin-top: 10px;
 }
-.register .event-preference label {
-    font-size: 16px;
-    display: flex;
+.choices h3{
+    font-family: "Agbalumo" , serif;
+    font-size: 50px;
+    color:#097612;
+}
+.choices label {
+    font-size: 30px;
     align-items: center;
-    gap: 6px;
-    margin-bottom: 5px;
+    display:flex;
+    gap: 20px;
+    cursor: pointer;
+    width: calc(33.33% - 20px);
+    white-space: nowrap;
 }
 
-.register .event-type {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 80%;
-    gap: 10px; 
-    align-items: flex-start;
-    margin-top: 15px;
-}
-.register .event-type label {
-    font-size: 16px;
-    display: flex;
-    align-items: center; 
-    gap: 8px; 
+.choices input{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
 }
 .register button {
-    padding: 10px 20px;
-    margin-top: 10px;
+    padding: 20px 60px;
+    margin-top: 30px;
     border-radius: 35px;
-    border: none;
-    background-color: #4f02ba;
+    background-color: #1295bd;
     color: rgb(3, 123, 127);
     cursor: pointer;
 }
-
 .register button:hover {
-    background-color: #45a049;
+    background-color: #05f111;
 }
 /*==================== Search and filter bar=====================*/
 .top-bar {
@@ -502,7 +527,7 @@ h4{
 /*==================== Image Slider =====================*/
 .image-slider {
     width: 100%;
-    height: 450px;
+    height: 650px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;

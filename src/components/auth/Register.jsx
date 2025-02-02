@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Link, useNavigate } from "react-router-dom";
-import { toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
+
 
 
 //Register component
@@ -50,24 +50,26 @@ function Register() {
         <div className="register">
             <h2>Create an Account</h2>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Full Name:</label>
-                    <input value={name} onChange={e => setName(e.target.value)} type="text" id="name" name="name" required />
+                <div className="user-register">
+                    <div>
+                        <label htmlFor="name">Full Name:</label>
+                        <input value={name} onChange={e => setName(e.target.value)} type="text" id="name" name="name" required />
+                    </div>
+                    <div>
+                        <label htmlFor="email">Email:</label>
+                        <input value={email} onChange={e => setEmail(e.target.value)} type="email" id="email" name="email" required />
+                    </div>
+                    <div>
+                        <label htmlFor="password">Password:</label>
+                        <input value={password} onChange={e => setPassword(e.target.value)} type="password" id="password" name="password" required />
+                    </div>
+                    <div>
+                        <label htmlFor="confirm-password">Confirm Password:</label>
+                        <input value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} type="password" id="confirm-password" name="confirm-password" required />
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input value={email} onChange={e => setEmail(e.target.value)} type="email" id="email" name="email" required />
-                </div>
-                <div>
-                    <label htmlFor="password">Password:</label>
-                    <input value={password} onChange={e => setPassword(e.target.value)} type="password" id="password" name="password" required />
-                </div>
-                <div>
-                    <label htmlFor="confirm-password">Confirm Password:</label>
-                    <input value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} type="password" id="confirm-password" name="confirm-password" required />
-                </div>
-                <div>
-                    <label>Event Preferences:</label>
+                <div className="choices">
+                    <h3>Event Preferences:</h3>
                     <div>
                         <label>
                             <input type="checkbox" value="Game Jams" onChange={handleEventChange} />
@@ -78,13 +80,27 @@ function Register() {
                             Tech Events
                         </label>
                         <label>
+                            <input type="checkbox" value="Hackathon" onChange={handleEventChange} />
+                            Hackathon
+                        </label>
+                        <label>
                             <input type="checkbox" value="Game Tournaments" onChange={handleEventChange} />
                             Game Tournaments
                         </label>
+                        <label>
+                            <input type="checkbox" value="Workshop" onChange={handleEventChange} />
+                            Workshop
+                        </label>
+                        <label>
+                            <input type="checkbox" value="Meetup" onChange={handleEventChange} />
+                            Meetup
+                        </label>
+                        <label>
+                            <input type="checkbox" value="Anime" onChange={handleEventChange} />
+                            Anime
+                        </label>
                     </div>
-                </div>
-                <div>
-                    <label>Event Type:</label>
+                    <h3>Event Type:</h3>
                     <div>
                         <label>
                             <input 

@@ -1,5 +1,6 @@
 import React from "react";
 import NotificationBell from "../notification/NotificationBell";
+
 //each event handled by this event card component
 const EventCard = ({ event, isBooked, onBook, onRemove }) => {
     return (
@@ -26,6 +27,8 @@ const EventCard = ({ event, isBooked, onBook, onRemove }) => {
                 <p>
                     <strong>Participants:</strong> {event.participants} / {event.max_participants}
                 </p>
+                
+                {/* Adding the notification bell to our cards such that if we have an event nearing we get the notification */}
                 {isBooked && <NotificationBell daysRemaining={event.daysRemaining} />}
 
                 {isBooked ? (
