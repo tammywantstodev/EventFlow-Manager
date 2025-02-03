@@ -517,6 +517,7 @@ button:hover {
 
 /*==================== Image Slider =====================*/
 .image-slider {
+    max-width: 100%;
     width: 100%;
     height: auto;
     max-height: 950px;
@@ -533,7 +534,7 @@ button:hover {
 }
 
 /*==============================Now Making our app responsive to various devices=========================*/
-/* Responsive styles for tablets and smaller screens */
+/*============ Responsive styles for tablets and smaller screens============ */
 @media screen and (max-width: 1024px) {
     body {
         padding: 20px;
@@ -594,7 +595,7 @@ button:hover {
     }
 }
 
-/* Mobile styles */
+/*============ Mobile styles ============*/
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 40px;
