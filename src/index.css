@@ -138,36 +138,38 @@ footer li svg {
     font-size: 20px;
     font-family: "Lato", serif;
 }
-.info{
+.info {
     margin-bottom: 5px;
-}  
+    display: flex;
+    justify-content: space-between; /* Distribute buttons evenly */
+    align-items: center; /* Align items vertically centered */
+}
+
 button {
-    padding: 10px 20px;
-    margin: 90px 20px;
+    padding: 10px 25px;
+    margin: 0 10px; 
     border: none;
     border-radius: 45px;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 20px; 
 }
-  
+
 button:hover {
     background-color: #45a049;
     color: white;
 }
-  
+
 .sign-in, .sign-up {
     background-color: rgb(12, 3, 64);
-    align-items: right;
-    width: 500px;
-    gap: 20px;
+    width: 200px; 
 }
-  
+
 .browse-events {
     background-color: #0a2bc2;
     color: white;
-    width: 600px;
-    /* margin-bottom: 1px; */
+    width: 250px; 
 }
+
 /*==================== About Section=====================*/
 .about{
     background-color: #1f0136;
