@@ -1,0 +1,175 @@
+{
+  "users": [
+    {
+      "name": "Max",
+      "email": "Max123@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "selectedEvents": "Game Jams",
+      "eventType": "Online",
+      "id": "60e9"
+    },
+    {
+      "id": "d6b6",
+      "name": "Naf",
+      "email": "naf1234@mail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "selectedEvents": [
+        "Game Jams"
+      ],
+      "eventType": "physical"
+    },
+    {
+      "id": "ee4a",
+      "name": "Naf1",
+      "email": "naf1234@mail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "selectedEvents": [
+        "Game Jams"
+      ],
+      "eventType": "online"
+    },
+    {
+      "id": "1c53",
+      "name": "Max",
+      "email": "max123@gmail",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "selectedEvents": [
+        "Game Jams"
+      ],
+      "eventType": "physical"
+    },
+    {
+      "id": "9110",
+      "name": "Max",
+      "email": "max123@gmail",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "selectedEvents": [
+        "Game Jams"
+      ],
+      "eventType": "physical"
+    },
+    {
+      "id": "bbd6",
+      "name": "Max",
+      "email": "max123@gmail",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "selectedEvents": [
+        "Game Jams"
+      ],
+      "eventType": "physical"
+    },
+    {
+      "id": "Max",
+      "email": "max123@gmail",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "selectedEvents": [
+        "Game Jams"
+      ],
+      "eventType": "physical"
+    },
+    {
+      "id": "Max",
+      "email": "max123@gmail",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "selectedEvents": [
+        "Tech Events"
+      ],
+      "eventType": "physical"
+    },
+    {
+      "id": "Max1",
+      "email": "max123@gmail",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "selectedEvents": [
+        "Tech Events"
+      ],
+      "eventType": "online"
+    },
+    {
+      "id": "Naf123",
+      "name": "Naftaly Irungu",
+      "email": "naf123@mail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "selectedEvents": [
+        "Tech Events"
+      ],
+      "eventType": "online"
+    },
+    {
+      "id": "439f",
+      "name": "Yvonne Chamwada",
+      "email": "ivvy123@mail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "selectedEvents": [
+        "Tech Events"
+      ],
+      "eventType": "online"
+    },
+    {
+      "id": "1b25",
+      "name": "Brian Magendi",
+      "email": "brayo77@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "selectedEvents": [
+        "Tech Events"
+      ],
+      "eventType": "physical"
+    },
+    {
+      "id": "fdbd",
+      "name": "Catherine Irungu",
+      "email": "kate123@gmail.com",
+      "password": "77777",
+      "confirmPassword": "77777",
+      "selectedEvents": [
+        "Tech Events"
+      ],
+      "eventType": "online"
+    },
+    {
+      "id": "7d1e",
+      "name": "Derrick Maina",
+      "email": "derro123@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "selectedEvents": [
+        "Tech Events"
+      ],
+      "eventType": "physical"
+    },
+    {
+      "id": "47a3",
+      "name": "Mary Mwangi",
+      "email": "marymary@mail.com",
+      "password": "1234567",
+      "confirmPassword": "1234",
+      "selectedEvents": [
+        "Tech Events"
+      ],
+      "eventType": "physical"
+    },
+    {
+      "id": "4860",
+      "name": "Mary Mwangi",
+      "email": "marymary@mail.com",
+      "password": "1234567",
+      "confirmPassword": "1234567",
+      "selectedEvents": [
+        "Tech Events"
+      ],
+      "eventType": "physical"
+    }
+  ]
+}
