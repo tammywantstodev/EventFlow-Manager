@@ -12,7 +12,7 @@ function Register() {
 
     
     const [selectedEvents, setSelectedEvents] = useState([]);
-    const [eventType, setEventType] = useState('both');  // Default to "both"
+    const [eventType, setEventType] = useState('both');  
 
     const navigate = useNavigate();
 

@@ -23,7 +23,7 @@ function App(){
           <Route path="/register" element={<Register />}/>
           <Route path="/events" element={<EventsPage />}/>
           <Route path="/booked-events" element={<BookedEvents />}/>
-          <Route path="//create-event" element={<EventForm />}/>
+          <Route path="/create-event" element={<EventForm />}/>
         </Routes>
       </Router>
       <Footer />

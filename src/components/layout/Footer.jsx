@@ -14,15 +14,15 @@ function Footer(){
     return(
         <footer className='footer'>
             <ul>
-                <li><LuCopyright size={60}/>EventFlow Manager</li>
-                <li><FaPhoneVolume size={60}/></li>
-                <li><TfiEmail size={60}/></li>
-                <li><MdOutlineFacebook size={60}/></li>
-                <li><TiSocialInstagram size={60}/></li>
-                <li><RiTwitterXLine size={60}/></li>
-                <li><TfiYoutube size={60}/></li>
-                <li><ImTwitch size={60}/></li>
-                <li><TfiTumblr size={60}/></li>
+                <li><LuCopyright size={40}/>EventFlow Manager</li>
+                <li><FaPhoneVolume size={40}/></li>
+                <li><TfiEmail size={40}/></li>
+                <li><MdOutlineFacebook size={40}/></li>
+                <li><TiSocialInstagram size={40}/></li>
+                <li><RiTwitterXLine size={40}/></li>
+                <li><TfiYoutube size={40}/></li>
+                <li><ImTwitch size={40}/></li>
+                <li><TfiTumblr size={40}/></li>
             </ul>
         </footer>
     )

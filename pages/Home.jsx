@@ -10,16 +10,19 @@ function Home(){
                 <div className='left-section'>
                     <h2> Welcome to Event Manager</h2>
                     <p> Discover and manage events effortlessly.</p>
-                    <div className='info'>
-                        <p>A smooth and intuitive platform to handle your event planning needs.</p>
-                    </div>
+                    <p>A smooth and intuitive platform to handle your event planning needs.</p>
                     <ImageSlider />
+                    <div className='info'>
+                        <Link to='/login'><button className='sign-in'>Sign In</button></Link>
+                        <Link to='/register'><button className='sign-up'>Sign Up</button></Link>
+                        <Link to='/events'><button className='browse-events'>Click here to browse our events listing</button></Link>
+                    </div>
                 </div>
-                <div className='right-section'>
+                {/* <div className='right-section'>
                     <Link to='/login'><button className='sign-in'>Sign In</button></Link>
                     <Link to='/register'><button className='sign-up'>Sign Up</button></Link>
                     <Link to='/events'><button className='browse-events'>Click here to browse our events listing</button></Link>
-                </div>
+                </div> */}
             </div>
         </div>
     );
